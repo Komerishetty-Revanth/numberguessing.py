@@ -1,0 +1,10 @@
+import random
+choices_input=input("enter your choices numbers: ")
+choices=(int(x)for x in choices_input.split())
+guess=random.choice(choices_input)
+start=int(input("enter my guess number: "))
+while guess==start:
+ print("you win")
+else:
+ start=input("again")
+ print("you lost")
